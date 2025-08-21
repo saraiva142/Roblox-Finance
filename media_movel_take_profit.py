@@ -3,6 +3,9 @@ import os
 import time
 from binance.client import Client
 from binance.enums import *
+from dotenv import load_dotenv  # <-- 1. Importe a biblioteca
+
+load_dotenv()  # <-- 2. Carregue as variáveis do arquivo .env
 
 # Configuração da API
 api_key = os.getenv("KEY_BINANCE")
